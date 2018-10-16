@@ -1,0 +1,24 @@
+.page-header{
+    margin:0;
+    background-color:#003F91;
+ }
+ .h-divider{
+ width:100%;
+ border-top:0.5em solid rgb(253, 145, 21);
+}
+ .page-footer{
+     margin:0;
+     padding-top: 1em;
+     padding-bottom: 1em;
+ }
+
+.body{
+    padding: 0;
+}
+
+/* Bootstrap should have already provided this, check again */
+.align-items-center {
+    display: flex; 
+    align-items: center;  /*Aligns vertically center */
+    justify-content: space-around; /*Aligns horizontally center */
+  }

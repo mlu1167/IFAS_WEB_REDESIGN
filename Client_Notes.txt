@@ -1,0 +1,52 @@
+1. Current methods?
+
+Two rooms: 1. interview rooms 2. a room with glass, on the other side of the
+room Session? Only one session at a time. Reservation is not connected to
+outlook. Only a shared time tool.
+
+2. How? Who to contact in the process,
+
+3. who? different based on the situation, max of 5 for each subject.
+
+4. how many session per day? depends on the project load, at most 8 session
+per day, half an hour increments.
+
+5. what type of reminders to client? No current reminders available
+
+6. How to keep the client list? Should be booked up by outlook. too many
+people work at XOM better to have a tool to access the names inner-system.
+
+7. nice to have the interviewees read and sign consent form ahead of time.
+audio, video.
+
+8. it would be nice to categorize projects, share docs from other projects,
+add more docs, mark the documents with its relating date and meeting
+location.
+
+9. Attachment, who, when and the process associated.
+
+10. device? booking through laptops, but phone will be used much less
+frequently.
+
+11. interviewee, performance test, a user come in with a laptop and watch a
+walk-through on their machine. researcher take notes in either room.
+
+12. Key difficult, document management cant be very tricky. key guidance,
+functionality, usability of the booking tool itself. Easy for end users to
+sign-up for.
+
+13. on which phrase do you spend most time? Most time is at very beginning,
+booking room for different users.
+
+14. what kinda experience? Simple!!!! Challenging thing. Really understand
+the work-flow. Simple interface for interviewees.
+
+15. ideally, sign up/schedule everything for less than a min. Getting ready for meeting, doc, adding
+docs, should be less than 5 mins. Figuring out room availability for less
+than a min (calendar feature).
+
+16. To distinguish the different interviews' purposes.
+
+17. link to outlook? attachment? access control?
+
+18. Color usage for interface.
