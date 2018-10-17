@@ -35,7 +35,7 @@
     <!--Divider showing gator color-->
     <div class="h-divider"></div>
     <!-- The Navbar-->
-    <nav class="navbar navbar-expand navbar-expand navbar-light ">
+    <nav class="navbar navbar-expand navbar-expand navbar-light py-2 ">
         <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button> -->
@@ -91,26 +91,32 @@
     <!--The carousel-->
     <div class="jumbotron">
         <div class="carousel slide" id="carouselDisplay" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselDisplay" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselDisplay" data-slide-to="1"></li>
-                <li data-target="#carouselDisplay" data-slide-to="2"></li>
+            <ol class="carousel-indicators carousel-indicators-text">
+                <li data-target="#carouselDisplay" data-slide-to="0" class="active" id="temperature-indicator">Temperature</li>
+                <li data-target="#carouselDisplay" data-slide-to="1">Wet Bulb Temp</li>
+                <li data-target="#carouselDisplay" data-slide-to="2">Daily Min Temp</li>
+                <li data-target="#carouselDisplay" data-slide-to="3">Daily Avg Temp</li>
+                <li data-target="#carouselDisplay" data-slide-to="4" id="dailyET-indicator">Daily ET</li>
+                <li data-target="#carouselDisplay" data-slide-to="5">Daily Total Rain</li>
+                <li data-target="#carouselDisplay" data-slide-to="6">FCST Min Temp</li>
             </ol>
+            <!-- <ol class="nav nav-tabs nav-justified carousel-indicators" id="nav-indicator">
+          <li data-target="#carouselDisplay" data-slide-to="0" class="nav-item active"><a class ="nav-link" href="#">About</a></li>
+          <li data-target="#carouselDisplay" data-slide-to="1" class="nav-item" ><a class="nav-link" href="#">Projects</a></li>
+          <li data-target="#carouselDisplay" data-slide-to="2" class="nav-item" ><a class="nav-link" href="#">Portfolio</a></li></ol> -->
             <div class="carousel-inner">
                 <div class="carousel-item active ">
                     <div class="container mr-10">
                         <div class="row justify-content-center">
                             <div class="col-3 ">
-                                <div class="carousel-text mt-10">
-                                    <h3>Information will be displayed here:</h3>
-                                    <ol>
-                                        <li>Blah Blah</li>
-                                        <li>Blah Blah</li>
-                                        <li>Blah Blah</li>
-                                        <li>Blah Blah</li>
-                                    </ol>
+                                <div class="card box-shadow">
+                                    <img class="card-img-top" src="image/mostly_sunny.png" alt="mostly sunny">
+                                    <div class="card-Body">
+                                        <h5 class="card-title"> Station #80</h5>
+                                        <p class="card-text">The weather condition is mostly sunny.</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </div><!--card-->
                             <img src="image/sample.png" alt="Florida Map" class="img-fluid col-5 ">
                         </div>
                     </div>
@@ -178,45 +184,45 @@
                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
                     mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
                     mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" role="button" href="#">View details »</a></p>
+                <p><a class="btn btn-info" role="button" href="#">View details »</a></p>
             </div>
             <div class="col-md-4">
-                <h2>Heading</h2>
+                <h2>Graphic Weahter Data</h2>
                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
                     mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
                     mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" role="button" href="#">View details »</a></p>
+                <p><a class="btn btn-info" role="button" href="#">View details »</a></p>
             </div>
             <div class="col-md-4">
-                <h2>Heading</h2>
+                <h2>NWS Forecast</h2>
                 <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
                     ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
                     condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-secondary" role="button" href="#">View details »</a></p>
+                <p><a class="btn btn-info" role="button" href="#">View details »</a></p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-4">
-                <h2>Heading</h2>
+                <h2>RADAR</h2>
                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
                     mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
                     mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" role="button" href="#">View details »</a></p>
+                <p><a class="btn btn-info" role="button" href="#">View details »</a></p>
             </div>
             <div class="col-md-4">
-                <h2>Heading</h2>
+                <h2>Extension Ag Report</h2>
                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
                     mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
                     mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" role="button" href="#">View details »</a></p>
+                <p><a class="btn btn-info" role="button" href="#">View details »</a></p>
             </div>
             <div class="col-md-4">
-                <h2>Heading</h2>
+                <h2>My Florida Farm Weather</h2>
                 <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
                     ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
                     condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-secondary" role="button" href="#">View details »</a></p>
+                <p><a class="btn btn-info" role="button" href="#">View details »</a></p>
             </div>
         </div>
         <!--footer-->

@@ -1,13 +1,38 @@
+.jumbotron{
+  padding-bottom: 1em;
+}
 .carousel-text{
     margin-top:5em;
 }
 .carousel-indicators li {
   background-color: #999;
-  background-color: rgba(70,70,70,.25);
+  background-color: rgba(38, 56, 134, 0.5);
+  width:8em;
+  height:2em;
+  border-radius: 1;
+  text-indent: 0.8%;
+  color: #fff;
+}
+
+#temperature-indicator{
+  text-indent:1.2%;
+
+}
+
+#dailyET-indicator{
+  text-indent:2.6%;
 }
 
 .carousel-indicators .active {
-  background-color: #444;
+  background-color: rgb(6, 60, 161);
+}
+
+.carousel-indicators :hover{
+  border-color:  rgb(6, 60, 161);
+}
+
+.carousel-inner{
+  height: 35em !important;
 }
 
 .carousel-control-prev-icon,
