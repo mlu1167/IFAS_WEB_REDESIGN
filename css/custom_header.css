@@ -1,20 +1,18 @@
 .page-header{
     margin:0;
-    background-color:#003F91;
+    /* background-color:#003F91; */
+    background-color: #3D405B;
  }
+
  .h-divider{
  width:100%;
- border-top:0.5em solid rgb(253, 145, 21);
+ border-top:0.5em solid #E07A5F;
 }
  .page-footer{
      margin:0;
      padding-top: 1em;
      padding-bottom: 1em;
  }
-
-.body{
-    padding: 0;
-}
 
 /* Bootstrap should have already provided this, check again */
 .align-items-center {

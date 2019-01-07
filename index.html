@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/custom_header.css">
     <link rel="stylesheet" href="css/custom_navbar.css">
     <link rel="stylesheet" href="css/custom_carousel.css">
+    <link rel="stylesheet" href="css/custom_footer.css">
+    <link rel="stylesheet" href="css/custom_card_container.css">
     <title>FAWN - Florida Automated Weather Network</title>
 
 </head>
@@ -32,8 +34,10 @@
         </div>
         <!--row-->
     </div>
+
     <!--Divider showing gator color-->
     <div class="h-divider"></div>
+
     <!-- The Navbar-->
     <nav class="navbar navbar-expand navbar-expand navbar-light py-2 ">
         <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,9 +92,11 @@
         </div>
     </nav>
 
+
     <!--The carousel-->
-    <div class="jumbotron">
-        <div class="carousel slide" id="carouselDisplay" data-ride="carousel">
+    <div class="cover-div embed-responsive">
+        <!-- <div class="overlay"></div> -->
+        <div class="carousel slide" id="carouselDisplay" data-ride="carousel" data-interval="5000">
             <ol class="carousel-indicators carousel-indicators-text">
                 <li data-target="#carouselDisplay" data-slide-to="0" class="active" id="temperature-indicator">Temperature</li>
                 <li data-target="#carouselDisplay" data-slide-to="1">Wet Bulb Temp</li>
@@ -104,19 +110,24 @@
           <li data-target="#carouselDisplay" data-slide-to="0" class="nav-item active"><a class ="nav-link" href="#">About</a></li>
           <li data-target="#carouselDisplay" data-slide-to="1" class="nav-item" ><a class="nav-link" href="#">Projects</a></li>
           <li data-target="#carouselDisplay" data-slide-to="2" class="nav-item" ><a class="nav-link" href="#">Portfolio</a></li></ol> -->
-            <div class="carousel-inner">
+            <div class="carousel-inner ">
                 <div class="carousel-item active ">
                     <div class="container mr-10">
                         <div class="row justify-content-center">
-                            <div class="col-3 ">
-                                <div class="card box-shadow">
-                                    <img class="card-img-top" src="image/mostly_sunny.png" alt="mostly sunny">
-                                    <div class="card-Body">
+                            <div class="col-3 align-self-stretch">
+                                <div class="card box-shadow mt-3 bg-light">
+                                    <div class="card-header">
+                                        Temperature
+                                    </div>
+                                    <img class="card-img-top" src="image/cardImage.png" alt="mostly sunny">
+                                    <div class="card-body">
                                         <h5 class="card-title"> Station #80</h5>
-                                        <p class="card-text">The weather condition is mostly sunny.</p>
+                                        <p class="card-text">The weather condition is mostly sunny. More information
+                                            about weather, blah blah blah.</p>
                                     </div>
                                 </div>
-                            </div><!--card-->
+                            </div>
+                            <!--card-->
                             <img src="image/sample.png" alt="Florida Map" class="img-fluid col-5 ">
                         </div>
                     </div>
@@ -124,18 +135,21 @@
                 <div class="carousel-item">
                     <div class="container mr-10 ">
                         <div class="row justify-content-center ">
-                            <div class="col-3 ">
-                                <div class="carousel-text mt-10">
-                                    <h3>Information will be displayed here:</h3>
-                                    <ol>
-                                        <li>Blah Blah</li>
-                                        <li>Blah Blah</li>
-                                        <li>Blah Blah</li>
-                                        <li>Blah Blah</li>
-                                    </ol>
+                            <div class="col-3 align-self-stretch">
+                                <div class="card box-shadow bg-light">
+                                    <div class="card-header">
+                                        Web Bulb Temp
+                                    </div>
+                                    <img class="card-img-top" src="image/cardImage.png" alt="mostly sunny">
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Station #80</h5>
+                                        <p class="card-text">The weather condition is mostly sunny. More information
+                                            about weather, blah blah blah.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <img src="image/Cute+Dummy.png" alt="Florida Map" class="img-fluid col-5 ">
+                            <!--card-->
+                            <img src="image/Cute+Dummy.png" alt="Florida Map" class="img-fluid col-6 ">
                         </div>
                     </div>
                 </div>
@@ -143,18 +157,21 @@
                     <div class="container mr-10">
                         <div class="row justify-content-center ">
                             <div class="col-3">
-                                <div class="carousel-text mt-10">
-                                    <h3>Information will be displayed here:</h3>
-                                    <ol>
-                                        <li>Blah Blah</li>
-                                        <li>Blah Blah</li>
-                                        <li>Blah Blah</li>
-                                        <li>Blah Blah</li>
-                                    </ol>
+                                <div class="card box-shadow bg-light">
+                                    <div class="card-header">
+                                        Daily Min Temp
+                                    </div>
+                                    <img class="card-img-top" src="image/cardImage.png" alt="mostly sunny">
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Station #80</h5>
+                                        <p class="card-text">The weather condition is mostly sunny. More information
+                                            about
+                                            weather, blah blah blah.</p>
+                                    </div>
                                 </div>
-
                             </div>
-                            <img src="image/801010&text=Another+Dummy.png" alt="Florida Map" class="img-fluid col-5 bg-success">
+                            <!--card-->
+                            <img src="image/801010&text=Another+Dummy.png" alt="Florida Map" class="img-fluid col-6 bg-success">
                         </div>
                     </div>
                 </div>
@@ -176,132 +193,138 @@
     </div>
 
     <!--Other Content-->
-    <div class="container">
+    <div class="container my-3" id="cardContainer">
         <!-- Example row of columns -->
-        <div class="row">
+        <div class="row mb-3 d-flex align-items-stretch">
             <div class="col-md-4">
-                <h2>Lastest Observation</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                    mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-                    mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-info" role="button" href="#">View details »</a></p>
+                <div class="card box-shadow bg-light">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>Lastest Observation</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus
+                                commodo, tortor
+                                mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
+                                malesuada magna
+                                mollis euismod. Donec sed odio dui. </p>
+                            <p><a class="btn btn-info" role="button" href="#">View details »</a></p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4">
-                <h2>Graphic Weahter Data</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                    mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-                    mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-info" role="button" href="#">View details »</a></p>
+                <div class="card bg-light box-shadow">
+                    <div class="card-body bg-light">
+                        <div class="card-title">
+                            <h2>Graphic Weather Data</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus
+                                commodo, tortor
+                                mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
+                                malesuada magna
+                                mollis euismod. Donec sed odio dui. </p>
+                            <p><a class="btn btn-info" role="button" href="#">View details »</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <div class="col-md-4">
-                <h2>NWS Forecast</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
-                    ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-info" role="button" href="#">View details »</a></p>
+                <div class="card box-shadow bg-light">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>NWS Forecast</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus
+                                commodo, tortor
+                                mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
+                                malesuada magna
+                                mollis euismod. Donec sed odio dui. </p>
+                            <p><a class="btn btn-info" role="button" href="#">View details »</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <!--end of row-->
 
         <div class="row">
             <div class="col-md-4">
-                <h2>RADAR</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                    mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-                    mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-info" role="button" href="#">View details »</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2>Extension Ag Report</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                    mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-                    mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-info" role="button" href="#">View details »</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2>My Florida Farm Weather</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
-                    ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-info" role="button" href="#">View details »</a></p>
-            </div>
-        </div>
-        <!--footer-->
-<!-- Footer -->
-<footer class="page-footer font-small bg-info pt-4">
+                <div class="card box-shadow bg-light">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>RADAR</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus
+                                commodo, tortor
+                                mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
+                                malesuada magna
+                                mollis euismod. Donec sed odio dui. </p>
+                            <p><a class="btn btn-info" role="button" href="#">View details »</a></p>
 
-        <!-- Footer Links -->
-        <div class="container-fluid text-center text-md-left">
-          <!-- Grid row -->
-          <div class="row">
-            <!-- Grid column -->
-            
-            <!-- Grid column -->
-            <hr class="clearfix w-100 d-md-none pb-3">
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
-                <!-- Links -->
-                <h5 class="text-uppercase">Links</h5>
-                <ul class="list-unstyled">
-                  <li>
-                    <a href="#!">Link 1</a>
-                  </li>
-                  <li>
-                    <a href="#!">Link 2</a>
-                  </li>
-                  <li>
-                    <a href="#!">Link 3</a>
-                  </li>
-                  <li>
-                    <a href="#!">Link 4</a>
-                  </li>
-                </ul>
-    
-              </div>
-              <!-- Grid column -->
-    
-              <!-- Grid column -->
-              <div class="col-md-3 mb-md-0 mb-3">
-    
-                <!-- Links -->
-                <h5 class="text-uppercase">Links</h5>
-    
-                <ul class="list-unstyled">
-                  <li>
-                    <a href="#!">Link 1</a>
-                  </li>
-                  <li>
-                    <a href="#!">Link 2</a>
-                  </li>
-                  <li>
-                    <a href="#!">Link 3</a>
-                  </li>
-                  <li>
-                    <a href="#!">Link 4</a>
-                  </li>
-                </ul>
-    
-              </div>
-              <!-- Grid column -->
-    
-          </div>
-          <!-- Grid row -->
-    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card box-shadow bg-light">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>Extension Ag Weather Report</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus
+                                commodo, tortor
+                                mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
+                                malesuada magna
+                                mollis euismod. Donec sed odio dui. </p>
+                            <p><a class="btn btn-info" role="button" href="#">View details »</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card box-shadow bg-light">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>My Florida Farm Weather</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus
+                                commodo, tortor
+                                mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
+                                malesuada magna
+                                mollis euismod. Donec sed odio dui. </p>
+                            <p><a class="btn btn-info" role="button" href="#">View details »</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Footer Links -->
-    
+    </div>
+    <!--cards container-->
+    <!-- Footer -->
+    <!--Divider showing gator color-->
+    <div class="h-divider"></div>
+    <footer class="page-footer font-small pt-4">
+
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">
             © University of Florida-Gainesville, Florida 32611; 352-392-0429
         </div>
         <!-- Copyright -->
-    
-      </footer>
-      <!-- Footer -->
-        
-        <!-- js scripts-->
-        <script src="js/jquery.slim.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+    </footer>
+    <!-- Footer -->
+
+    <!-- js scripts-->
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

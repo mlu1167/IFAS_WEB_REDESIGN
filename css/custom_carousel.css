@@ -1,33 +1,57 @@
-.jumbotron{
-  padding-bottom: 1em;
+.cover-div{
+  background-image: url(../image/Maverick.png);
+  background-size:cover;
+  padding:0;
+  position: relative;
 }
 .carousel-text{
     margin-top:5em;
 }
 .carousel-indicators li {
   background-color: #999;
-  background-color: rgba(38, 56, 134, 0.5);
+  background-color: rgba(38, 112, 155, 0.5);
   width:8em;
   height:2em;
   border-radius: 1;
   text-indent: 0.8%;
   color: #fff;
+  margin-top:0;
+}
+
+.carousel{
+  z-index: 2;
+  padding-bottom: 2em !important;
+}
+.carousel-item .container{
+  padding-top: 4em !important;
+  padding-bottom: 0 !important;
+}
+
+.overlay{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0, 0.5); /* Black background with opacity */
+  opacity: 0.5;
+  position: absolute;
+  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
 }
 
 #temperature-indicator{
-  text-indent:1.2%;
+  text-indent:1.6%;
 
 }
 
 #dailyET-indicator{
-  text-indent:2.6%;
+  text-indent:3.2%;
 }
 
 .carousel-indicators .active {
-  background-color: rgb(6, 60, 161);
+  /* background-color: rgb(6, 60, 161); */
+  background-color: #028090;
 }
 
 .carousel-indicators :hover{
+  background-color: #028090;
   border-color:  rgb(6, 60, 161);
 }
 
@@ -38,6 +62,11 @@
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-image: none;
+}
+
+.carousel-items .card{
+  width: 50em;
+  height:80em;
 }
 
 
