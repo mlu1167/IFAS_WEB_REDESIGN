@@ -1,3 +1,17 @@
+/* card container  */
+#cardContainer{
+    margin-bottom: 2em;
+}
+.container .card .btn {
+    /* background-color: rgb(0, 168, 151,0.1); */
+    margin-top: 2em;
+    margin-bottom: 0;
+    color: white;
+    
+}
+
+
+/* carousel */
 .cover-div{
   background-image: url(../image/Maverick.png);
   background-size:cover;

@@ -1,0 +1,60 @@
+.blue-grey{
+    color: #505763;
+}
+.page-content{
+    margin-top: 3em; 
+    margin-left: 4em;
+    margin-right: 4em;
+}
+.weather-icon{
+    margin-top: 2em;
+}
+
+.bg-blue-grey{
+    background-color: #91a1bc;
+}
+
+.body-color{
+    background-color: #F5F7FA;
+}
+.font-large{
+    font-size: 6em;
+}
+
+.font-small-1{
+    font-size: 1em;
+}
+
+.font-small-2{
+    font-size: 1.2em;
+}
+
+.font-mid{
+    font-size: 1.5em;
+}
+
+.font-LSU{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+
+.orange{
+    color: rgb(230, 173, 51);
+}
+
+.orange-2{
+    color: rgb(223, 161, 27);
+}
+
+.bg-orange{
+   background-color: rgb(236, 217, 185);
+}
+.blue{
+    color: #1153c5;
+}
+.blue-2{
+    color: #0f44a0;
+}
+.bg-blue{
+    background-color: #87acec;
+}
