@@ -1,17 +1,17 @@
 .page-footer{
     /* background-color:#003F91; */
-    background-color: #05668D;
+    background-color: #1D5A99;
     color: white;
 }
 .page-header{
     margin:0;
-    /* background-color:#003F91; */
-    background-color: #3D405B;
+    /* background-color:##3D405B; */
+    background-color: #0F5297;
  }
 
  .h-divider{
  width:100%;
- border-top:0.5em solid #E07A5F;
+ border-top:0.6em solid white;
 }
  .page-footer{
      margin:0;

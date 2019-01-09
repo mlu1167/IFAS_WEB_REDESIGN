@@ -8,7 +8,14 @@
 .navbar{
 
     /* background: rgba(121, 193, 245, 0.2); */
-    background: #81B29A;
+    background: #BA5B2A;
     font-size: 1.1em;
     font-weight: 700;
+}
+.nav-link{
+    color: white;
+    padding: 1.3em;
+    margin-left: 3.5em;
+    font-size: 1.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
